@@ -1,9 +1,9 @@
 // @ts-check
 // eslint-disable-next-line max-classes-per-file
-import { LoginPage } from './Login.page';
-import { InventoryPage } from './Inventory.page';
-import { ShoppingCartPage } from './ShoppingCart.page';
-import { BaseSwagLabPage } from './BaseSwagLab.page';
+import LoginPage from './Login.page';
+import InventoryPage from './Inventory.page';
+import ShoppingCartPage from './ShoppingCart.page';
+import BaseSwagLabPage from './BaseSwagLab.page';
 
 /**
  * Represents a Playwright page.
@@ -22,7 +22,7 @@ class Page {
  * Represents the application under test.
  * @extends Page
  */
-export class Application extends Page {
+class Application extends Page {
     /**
      * @type {LoginPage}
      */
@@ -43,3 +43,4 @@ export class Application extends Page {
      */
     baseSwagLab = new BaseSwagLabPage(this.page);
 }
+export default Application;

@@ -1,7 +1,7 @@
 // @ts-check
-import { BasePage } from './Base.page';
+import BasePage from './Base.page';
 
-export class LoginPage extends BasePage {
+class LoginPage extends BasePage {
     userNameInput = this.page.locator('#user-name');
 
     passwordInput = this.page.locator('#password');
@@ -14,3 +14,4 @@ export class LoginPage extends BasePage {
         await this.loginButton.click();
     }
 }
+export default LoginPage;

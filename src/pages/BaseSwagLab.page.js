@@ -1,7 +1,7 @@
 // @ts-check
-import { BasePage } from './Base.page';
+import BasePage from './Base.page';
 
-export class BaseSwagLabPage extends BasePage {
+class BaseSwagLabPage extends BasePage {
     // header
     mainMenuBtn = this.page.locator('TBD');
 
@@ -13,3 +13,4 @@ export class BaseSwagLabPage extends BasePage {
         return this.shoppingCartBadge.textContent();
     }
 }
+export default BaseSwagLabPage;

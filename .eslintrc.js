@@ -34,5 +34,6 @@ module.exports = {
             ignoreTemplateLiterals: true,
             ignoreRegExpLiterals: true,
         }],
+        'linebreak-style': 0,
     },
 };

@@ -1,5 +1,5 @@
 // @ts-check
-class BasePage {
+export class BasePage {
     url = '';
 
     /**
@@ -18,4 +18,3 @@ class BasePage {
         await this.page.goto(this.url);
     }
 }
-export default BasePage;

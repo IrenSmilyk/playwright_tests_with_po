@@ -1,8 +1,8 @@
 // @ts-check
 import { test as base } from '@playwright/test';
-import Application from '../pages/Application';
+import { Application } from '../pages/Application';
 
-const test = base.extend({
+export const test = base.extend({
     app: async ({ browser, page }, use) => {
         test.info().annotations.push({
             type: 'Browser',
@@ -14,5 +14,3 @@ const test = base.extend({
         await use(app);
     },
 });
-
-export default test;

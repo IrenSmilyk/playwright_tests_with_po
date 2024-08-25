@@ -1,7 +1,7 @@
 // @ts-check
-import BaseSwagLabPage from './BaseSwagLab.page';
+import { BaseSwagLabPage } from './BaseSwagLab.page';
 
-class ShoppingCartPage extends BaseSwagLabPage {
+export class ShoppingCartPage extends BaseSwagLabPage {
     url = '/cart.html';
 
     cartItemSelector = '.cart_item';
@@ -26,5 +26,3 @@ class ShoppingCartPage extends BaseSwagLabPage {
         await this.cartItems.nth(id).locator(this.removeItemSelector).click();
     }
 }
-
-export default ShoppingCartPage;
